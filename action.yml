@@ -1,0 +1,53 @@
+name: 'TrustFix OIDC Security Scanner'
+description: 'Scan GitHub Actions workflows for OIDC trust policy vulnerabilities and IAM misconfigurations'
+author: 'TrustFix'
+
+branding:
+  icon: 'shield'
+  color: 'blue'
+
+inputs:
+  github-token:
+    description: 'GitHub token for posting PR comments (defaults to GITHUB_TOKEN)'
+    required: false
+    default: ${{ github.token }}
+
+  workflow-path:
+    description: 'Path to workflows directory (defaults to .github/workflows)'
+    required: false
+    default: '.github/workflows'
+
+  fail-on-critical:
+    description: 'Fail the workflow if critical security issues are found'
+    required: false
+    default: 'false'
+
+  create-pr-comment:
+    description: 'Post findings as a PR comment'
+    required: false
+    default: 'true'
+
+  output-format:
+    description: 'Output format: json, sarif, or both'
+    required: false
+    default: 'both'
+
+outputs:
+  findings-count:
+    description: 'Total number of security findings'
+
+  critical-count:
+    description: 'Number of critical findings'
+
+  high-count:
+    description: 'Number of high severity findings'
+
+  has-vulnerabilities:
+    description: 'Whether any vulnerabilities were found (true/false)'
+
+  report-path:
+    description: 'Path to the JSON report file'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
