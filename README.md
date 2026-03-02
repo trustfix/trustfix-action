@@ -341,7 +341,7 @@ Need more than just detection? **[TrustFix Pro](https://trustfix.dev)** ($499/mo
 - ✅ Multi-account support
 - ✅ Compliance evidence export (SOC2)
 
-[Start Free Trial →](https://trustfix.dev/signup)
+[Start Free Trial →](https://trustfix.dev)
 
 ## 🤝 Contributing
 
@@ -361,7 +361,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## 🔗 Links
 
 - [TrustFix Pro](https://trustfix.dev)
-- [Documentation](https://docs.trustfix.dev)
+- [Documentation](https://trustfix.dev)
 - [GitHub Marketplace](https://github.com/marketplace/actions/trustfix-oidc-security-scanner)
 - [Report Issues](https://github.com/trustfix/trustfix-action/issues)
 
