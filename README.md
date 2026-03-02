@@ -49,7 +49,7 @@ That's it! No configuration needed. 🎉
 
 When running on pull requests, TrustFix posts a detailed comment:
 
-![TrustFix PR Comment](https://trustfix.dev/images/pr-comment.png)
+> **Example:** TrustFix posts detailed findings directly on your PR with severity levels and fix recommendations.
 
 ### Console Output
 
