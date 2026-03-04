@@ -35,7 +35,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run TrustFix OIDC Scanner
-        uses: trustfix/trustfix-action@v1
+        uses: trustfix/trustfix-action@v1.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           fail-on-critical: true
@@ -103,13 +103,13 @@ Found 3 workflow file(s)
 ### Basic Usage
 
 ```yaml
-- uses: trustfix/trustfix-action@v1
+- uses: trustfix/trustfix-action@v1.0.0
 ```
 
 ### Fail on Critical Issues
 
 ```yaml
-- uses: trustfix/trustfix-action@v1
+- uses: trustfix/trustfix-action@v1.0.0
   with:
     fail-on-critical: true
 ```
@@ -117,7 +117,7 @@ Found 3 workflow file(s)
 ### Custom Workflow Path
 
 ```yaml
-- uses: trustfix/trustfix-action@v1
+- uses: trustfix/trustfix-action@v1.0.0
   with:
     workflow-path: .github/actions
 ```
@@ -125,7 +125,7 @@ Found 3 workflow file(s)
 ### Upload SARIF to GitHub Security Tab
 
 ```yaml
-- uses: trustfix/trustfix-action@v1
+- uses: trustfix/trustfix-action@v1.0.0
   with:
     output-format: sarif
 
@@ -138,7 +138,7 @@ Found 3 workflow file(s)
 ### Use Report in Subsequent Steps
 
 ```yaml
-- uses: trustfix/trustfix-action@v1
+- uses: trustfix/trustfix-action@v1.0.0
   id: trustfix
 
 - name: Check results
@@ -152,7 +152,7 @@ Found 3 workflow file(s)
 ### Download JSON Report
 
 ```yaml
-- uses: trustfix/trustfix-action@v1
+- uses: trustfix/trustfix-action@v1.0.0
 
 - name: Upload report artifact
   uses: actions/upload-artifact@v4
