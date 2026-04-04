@@ -1,12 +1,18 @@
 # TrustFix OIDC Security Scanner
 
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-TrustFix-blue?logo=github)](https://github.com/marketplace/actions/trustfix-oidc-security-scanner)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/trustfix/trustfix-action/blob/main/LICENSE)
 
-**Scan AWS IAM roles for OIDC trust policy misconfigurations on every commit.**
+**Non-Human Identity Security Platform**
 
-TrustFix detects 10 types of OIDC misconfigurations in GitHub Actions → AWS
-trust policies and posts findings directly in your PR.
+Scan AWS IAM roles for OIDC trust policy misconfigurations on every commit.
+
+TrustFix detects 10 types of OIDC misconfigurations in GitHub Actions →
+AWS trust policies and posts findings directly in your PR.
+
+Part of the [TrustFix NHI Security Platform](https://trustfix.dev) —
+starting with GitHub Actions + AWS. GitLab CI, Azure AD, and GCP
+Workload Identity coming Q3-Q4 2026.
 
 ## Quick Setup
 ```yaml
@@ -46,6 +52,16 @@ jobs:
 | AI agent overprivileged | CRITICAL |
 | AI agent missing scope | HIGH |
 
+## Research
+
+We scanned **10,000 public GitHub repositories** and **54,767 workflows**:
+
+- **80.7%** still use static AWS credentials
+- **743 repos** are critically vulnerable
+- **Only 13.9%** use GitHub environment protection
+
+Full report: [80% of GitHub Repos Still Use Static AWS Credentials](https://trustfix.dev/blog/static-credentials-2026)
+
 ## Required AWS Permission
 
 Create a read-only role for TrustFix:
@@ -68,10 +84,18 @@ Create a read-only role for TrustFix:
 | `fail-on-high` | No | `false` | Fail the workflow on HIGH findings |
 | `aws-region` | No | `us-east-1` | AWS region to scan |
 
-## Auto-Fix with TrustFix Pro
+## The NHI Security Platform for DevSecOps
 
-The GitHub Action detects issues. **TrustFix Pro** fixes them automatically
-via AI-generated Terraform PRs, validated by the Policy Intelligence Engine™.
+This GitHub Action detects misconfigurations. The full TrustFix platform
+fixes them automatically:
+
+- **AI-generated Terraform fix PRs** — not just detection, actual remediation
+- **6-layer Policy Intelligence Engine™** — every fix validated before it reaches your repo
+- **TrustFix Confidence Score™ (0-100)** — transparent scoring in every PR
+- **Multi-model adversarial review** — second AI validates the first's fix (Team tier)
+- **SOC2 CC6 evidence export** — compliance-ready audit trail
+
+Detection is **free forever**. AI fix PRs start at **$499/month** (Pro).
 
 [Start free at trustfix.dev →](https://trustfix.dev)
 

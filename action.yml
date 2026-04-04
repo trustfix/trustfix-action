@@ -1,5 +1,5 @@
 name: 'TrustFix OIDC Security Scanner'
-description: 'Scan GitHub Actions workflows for OIDC trust policy vulnerabilities and IAM misconfigurations'
+description: 'Non-Human Identity Security Platform — scan GitHub Actions workflows for OIDC trust policy misconfigurations in AWS IAM roles.'
 author: 'TrustFix'
 
 branding:
