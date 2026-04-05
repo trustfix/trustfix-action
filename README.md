@@ -89,11 +89,13 @@ Create a read-only role for TrustFix:
 This GitHub Action detects misconfigurations. The full TrustFix platform
 fixes them automatically:
 
-- **AI-generated Terraform fix credits** — not just detection, actual remediation
-- **Policy Intelligence Engine™** — every fix validated through multiple proprietary validation layers
-- **Mathematically proves** access is narrowed, never widened
-- **TrustFix Confidence Score™ (0-100)** — transparent scoring in every PR
-- **Cross-model adversarial review** catches edge cases (Team & Enterprise)
+- **Policy Intelligence Engine™** — every fix validated before it reaches your repo:
+  - Code-aware generation matches your existing Terraform patterns
+  - Structural verification ensures fix compatibility with your infrastructure
+  - Proprietary security rules built from production IAM experience
+  - Mathematically proves access was narrowed, never widened
+  - Cross-model adversarial review catches edge cases (Team & Enterprise)
+  - TrustFix Confidence Score™ (0-100) in every PR
 - **SOC2 CC6 evidence export** — compliance-ready audit trail
 
 Detection is **free forever**. AI fix credits start at **$499/month** (Pro).
