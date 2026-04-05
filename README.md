@@ -90,12 +90,14 @@ This GitHub Action detects misconfigurations. The full TrustFix platform
 fixes them automatically:
 
 - **AI-generated Terraform fix credits** — not just detection, actual remediation
-- **6-layer Policy Intelligence Engine™** — every fix validated before it reaches your repo
+- **Policy Intelligence Engine™** — every fix validated through multiple proprietary validation layers
+- **Mathematically proves** access is narrowed, never widened
 - **TrustFix Confidence Score™ (0-100)** — transparent scoring in every PR
-- **Multi-model adversarial review** — second AI validates the first's fix (Team tier)
+- **Cross-model adversarial review** catches edge cases (Team & Enterprise)
 - **SOC2 CC6 evidence export** — compliance-ready audit trail
 
 Detection is **free forever**. AI fix credits start at **$499/month** (Pro).
+Enterprise: security@trustfix.dev
 
 [Start free at trustfix.dev →](https://trustfix.dev)
 
